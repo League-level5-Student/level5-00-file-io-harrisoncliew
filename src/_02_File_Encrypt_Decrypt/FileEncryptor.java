@@ -25,7 +25,7 @@ public class FileEncryptor {
 	 * Create a program that takes a message and a key from the user.
 	 * Use the key to shift each letter in the users input and save the final result to a file.
 	 */
-	static int key;
+	static int key = 0;
 	public static void main(String[] args) {
 		String encrypted = "";
 		String keyInString = JOptionPane.showInputDialog("Enter key to encrypt.");
