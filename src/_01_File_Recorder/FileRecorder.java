@@ -19,3 +19,4 @@ public class FileRecorder {
 		}
 	}
 }
+//Copyright © 2020 Harrison Liew

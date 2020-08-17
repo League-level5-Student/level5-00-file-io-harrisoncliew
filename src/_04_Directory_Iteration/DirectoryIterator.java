@@ -65,4 +65,4 @@ public class DirectoryIterator {
 		}
 	}
 }
-//Copyright © 2020 Harrison Liew
+//Copyright © 2020 Harrison Liew//Copyright © 2020 Harrison Liew

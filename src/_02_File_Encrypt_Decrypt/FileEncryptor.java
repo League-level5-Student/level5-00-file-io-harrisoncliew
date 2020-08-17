@@ -59,3 +59,4 @@ public class FileEncryptor {
 		
 	}
 }
+//Copyright © 2020 Harrison Liew
