@@ -43,6 +43,7 @@ public class ToDoList implements ActionListener {
 	ArrayList<String> tasks = new ArrayList<String>();
 	String[] options = { "By Number", "By Task" };
 	String message = "";
+	String whereToSave;
 
 	void start() {
 		addTask.addActionListener(this);
@@ -61,6 +62,7 @@ public class ToDoList implements ActionListener {
 		panel.add(saveList);
 		panel.add(loadList);
 		frame.add(panel);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
 	}
@@ -111,7 +113,7 @@ public class ToDoList implements ActionListener {
 		}
 		if (e.getSource() == saveList) {
 			update();
-			String whereToSave = JOptionPane.showInputDialog("Where would you like to save the file (specify package)? ");
+			whereToSave = JOptionPane.showInputDialog("Where would you like to save the file (specify package)? ");
 			try {
 				FileWriter fw = new FileWriter("src/"+whereToSave+"/ToDoList.txt");
 				fw.write(message);
@@ -123,6 +125,7 @@ public class ToDoList implements ActionListener {
 		if(e.getSource()==loadList) {
 			update();
 			JOptionPane.showMessageDialog(null, message);
+			JOptionPane.showMessageDialog(null, "Your txt file has been moved to "+whereToSave+".");
 		}
 	}
 }
