@@ -8,7 +8,6 @@ import javax.swing.JFileChooser;
 
 public class DirectoryIterator {
 	public static void main(String[] args) {
-		System.out.println("a");
 		/*
 		 * The following is an example of how to list all of the files in a directory.
 		 * Once the program is running, the directory is chosen using the JFileChooser.
